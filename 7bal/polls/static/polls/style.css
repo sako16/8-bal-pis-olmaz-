@@ -1,0 +1,399 @@
+/* Əsas Stil Qaydaları */
+:root {
+    --primary-color: #262626; /* Qara mətn */
+    --secondary-color: #A0A0A0; /* Bozumtul mətn */
+    --accent-color: #E75480; /* Çəhrayı rəng */
+    --bg-light: #FFFFFF;
+    --bg-dark: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Sadə font istifadə edirik */
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Header / Navbar Stili */
+.navbar {
+    border-bottom: 1px solid var(--bg-dark);
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: var(--secondary-color);
+}
+
+/* Kategoriyalar Bölməsi */
+.categories-section {
+    padding: 50px 0;
+}
+
+.categories-section h2 {
+    display: inline-block;
+}
+
+.view-all {
+    float: right;
+    color: var(--accent-color);
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.category-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.category-item {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border-radius: 20px;
+    border: 5px solid #807f85
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+.icon-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+/* Fərqli kateqoriya rəngləri üçün (Şəkildəki kimi) */
+.category-item:nth-child(1) .icon-placeholder { background-color: #F8F8F8; }
+.category-item:nth-child(2) .icon-placeholder { background-color: #E8F8E8; }
+.category-item:nth-child(3) .icon-placeholder { background-color: #FEEEEE; }
+.category-item:nth-child(4) .icon-placeholder { background-color: #FEF7E8; }
+.category-item:nth-child(5) .icon-placeholder { background-color: #F0F8FF; }
+.category-item:nth-child(6) .icon-placeholder { background-color: #FEE7E9; }
+
+/* Reseptlər Bölməsi */
+.recipes-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.recipe-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bg-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-image {
+    height: 250px;
+    background-color: var(--bg-dark); /* Şəkil yoxdursa arxa fon rəngi */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 20px;
+}
+
+/* Şəkillər üçün yer tutucular (Bu hissəyə öz şəkillərinizin URL-lərini əlavə edin) */
+.img-1 { background-image: url('https://assets.weforum.org/article/image/MerKXt0nVO-wxRhqsUMvJdU4il_ztA2Q6DKAJRYHHCg.jpg'); background-color: #9275B2; } 
+.img-2 { background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/a5/39/33/anjal.jpg?w=1400&h=1400&s=1'); background-color: #385E86; } 
+.img-3 { background-image: url('https://images.squarespace-cdn.com/content/v1/6352a78e5626a94602c08c5e/847804e5-3c96-4f66-9cf1-4f7a887e5ba9/unsplash-image-eeqbbemH9-c.jpg?format=2500w'); background-color: #E2B657; }
+/* Qalan şəkillər üçün də eynilə background-image əlavə edin */
+.img-4 { background-image: url('https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=656&h=651'); background-color: #6C8B4D; }
+.img-5 { background-image: url('https://www.greenqueen.com.hk/wp-content/uploads/2022/07/meatballs-green-queen.jpg'); background-color: #AD3D4D; }
+.img-6 { background-image: url('https://www.maxi-eat.com/modules/smartblog/images/3-single-default.jpg'); background-color: #E98A44; }
+.img-7 { background-image: url('https://iamafoodblog.b-cdn.net/wp-content/uploads/2025/06/one-pot-hainanese-chicken-7105w-2048x1366.webp'); background-color: #CBCBCB; }
+.img-8 { background-image: url('https://miro.medium.com/v2/resize:fit:1100/format:webp/1*aZkorGpX907Zio5hZwkqUw.jpeg'); background-color: #616E7F; }
+
+
+.heart-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.recipe-info {
+    padding: 15px;
+}
+
+.recipe-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.recipe-meta {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.recipe-meta span {
+    margin-right: 15px;
+}
+
+.recipe-meta i {
+    margin-right: 5px;
+    color: var(--accent-color);
+}
+
+/* Reklam Banner Stili */
+.ad-banner {
+    background-color: #79A066; /* Yaşıl fon rəngi */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    grid-column: span 1;
+    background-image: url('https://karimov-portfolio-web-3.netlify.app/assets/images/section%203/image%206.png'); /* Öz şəkilinizi əlavə edin */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Xəbər Bülleteni (Newsletter) Stili */
+.newsletter-section {
+    background-color: var(--primary-color); /* Qara fon */
+    padding: 80px 0;
+    margin-top: 50px;
+    position: relative;
+}
+
+.newsletter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+
+.newsletter-text {
+    max-width: 400px;
+}
+
+.newsletter-text .section-title {
+    text-align: left;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    padding: 15px 30px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.newsletter-image-left, .newsletter-image-right {
+    position: absolute;
+    width: 200px; /* Təxmini ölçü */
+    height: 200px; /* Təxmini ölçü */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+/* Şəkildəki yemək şəkilləri üçün yer tutucu */
+.newsletter-image-left {
+    background-image: url('placeholder-ingredients.png'); 
+    left: 0;
+    bottom: 0;
+}
+
+.newsletter-image-right {
+    background-image: url('placeholder-meal.png');
+    right: 0;
+    top: 0;
+}
+
+
+/* Footer Stili */
+.footer {
+    padding: 30px 0;
+    background-color: var(--bg-light);
+    font-size: 0.9em;
+}
+
+.footer .container {
+    padding-top: 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bg-dark);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    margin-left: 20px;
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.footer .social-icons a {
+    color: var(--secondary-color);
+}
+
+/* Kiçik Ekranlar üçün Responsivlik */
+@media (max-width: 900px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ad-banner {
+        grid-column: span 2;
+    }
+
+    .category-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .category-item {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        margin: 15px 0;
+    }
+    
+    .nav-links a {
+        margin: 0 10px;
+    }
+    
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ad-banner {
+        grid-column: span 1;
+    }
+    
+    .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .newsletter-form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .newsletter-form input[type="email"] {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    
+    .footer-top, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .footer-links a {
+        margin: 0 5px;
+    }
+}

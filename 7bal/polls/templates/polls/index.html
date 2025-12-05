@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodland - Reseptlər</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Foodland.</div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Recipes</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="categories-section">
+            <h2>Categories</h2>
+            <a href="#" class="view-all">View All Category list</a>
+            <div class="category-list">
+                <div class="category-item">
+                    <span style="font-size: 50px;">🍙</span><br>
+                    <p>Breakfast</p>
+                </div>
+                <div class="category-item">
+                    <span style="font-size: 50px;">🥬</span><br>
+                    <p>Vegan</p>
+                </div>
+                <div class="category-item">
+                    <span style="font-size: 50px;">🥩</span><br>
+                    <p>Meat</p>
+                </div>
+                <div class="category-item">
+                    <span style="font-size: 50px;">🍰</span><br>
+                    <p>Dessert</p>
+                </div>
+                <div class="category-item">
+                    <span style="font-size: 50px;">🥪</span><br>
+                    <p>Lunch</p>
+                </div>
+                <div class="category-item">
+                    <span style="font-size: 50px;">🍫</span><br>
+                    <p>Chocolate</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="recipes-section">
+            <h2 class="section-title">Simple and tasty recipes</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+            <div class="recipe-grid">
+                
+                <div class="recipe-card">
+                    <div class="recipe-image img-1">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Big and Juicy Wagyu Beef Cheeseburger</h3>
+                        <p class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Snack</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="recipe-card">
+                    <div class="recipe-image img-2">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Fresh Lime Roasted Salmon with Ginger Sauce</h3>
+                        <p class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-fish"></i> Fish</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="recipe-card">
+                    <div class="recipe-image img-3">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Strawberry Oatmeal Pancake with Honey Syrup</h3>
+                        <p class="recipe-meta">
+                            <span><i class="far fa-clock"></i> 30 Minutes</span>
+                            <span><i class="fas fa-utensils"></i> Dessert</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="recipe-card"><div class="recipe-image img-4"><i class="far fa-heart heart-icon"></i></div><div class="recipe-info"><h3>Fresh and Healthy Mixed Mediterranean Salad</h3><p class="recipe-meta"><span><i class="far fa-clock"></i> 30 Minutes</span><span><i class="fas fa-leaf"></i> Healthy</span></p></div></div>
+                <div class="recipe-card"><div class="recipe-image img-5"><i class="far fa-heart heart-icon"></i></div><div class="recipe-info"><h3>Chicken Meatballs with Cream Sauce</h3><p class="recipe-meta"><span><i class="far fa-clock"></i> 30 Minutes</span><span><i class="fas fa-drumstick-bite"></i> Meat</span></p></div></div>
+                
+                <div class="ad-banner"></div>
+                
+                <div class="recipe-card"><div class="recipe-image img-6"><i class="far fa-heart heart-icon"></i></div><div class="recipe-info"><h3>Fruity Pancake with Orange and Berries</h3><p class="recipe-meta"><span><i class="far fa-clock"></i> 30 Minutes</span><span><i class="fas fa-utensils"></i> Sweet</span></p></div></div>
+                <div class="recipe-card"><div class="recipe-image img-7"><i class="far fa-heart heart-icon"></i></div><div class="recipe-info"><h3>The Best Easy One Pot Chicken and Rice</h3><p class="recipe-meta"><span><i class="far fa-clock"></i> 30 Minutes</span><span><i class="fas fa-utensils"></i> Snack</span></p></div></div>
+                <div class="recipe-card"><div class="recipe-image img-8"><i class="far fa-heart heart-icon"></i></div><div class="recipe-info"><h3>The Creamiest Creamy Chicken Carbonara Recipe</h3><p class="recipe-meta"><span><i class="far fa-clock"></i> 30 Minutes</span><span><i class="fas fa-utensils"></i> Noodles</span></p></div></div>
+                
+            </div>
+        </section>
+
+    </main>
+    
+    <section class="newsletter-section">
+        <div class="container newsletter-content">
+            <div class="newsletter-text">
+                <h2 class="section-title">Deliciousness to your inbox</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </div>
+            <div class="newsletter-image-left"></div>
+            <div class="newsletter-image-right"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="logo">Foodland.</div>
+                <nav class="footer-links">
+                    <a href="#">Recipes</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About Us</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Foodland. Powered by Alizada.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
